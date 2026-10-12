@@ -334,7 +334,7 @@ def lire_cfg(texte):
 
 
 DEFAUTS = {c['ParamFieldName']: str(c.get('DefaultValue', '')) for c in config}
-DEFAUTS['MotDePasseRcon'] = 'Rc0nAleatoire42'   # AMP le tire au hasard
+DEFAUTS['MotDePasseRcon'] = 'essai-rcon'   # AMP le tire au hasard
 
 if not bash:
     print('---  aller-retour              bash introuvable : étape 8 sautée (à faire avant de pousser)')
@@ -416,7 +416,7 @@ else:
                 soucis.append('aller-retour « %s » : newmapsettings.cfg / perso.cfg' % titre)
 
         cas('défauts TeamKit', {}, 0, {
-            'hostname': '[FR] TeamKit - Alien Swarm: Reactive Drop', 'sv_password': '', 'rcon_password': 'Rc0nAleatoire42',
+            'hostname': '[FR] TeamKit - Alien Swarm: Reactive Drop', 'sv_password': '', 'rcon_password': 'essai-rcon',
             'sv_region': '3', 'sv_tags': 'fr,teamkit', 'sv_allow_lobby_connect_only': '0', 'asw_skill': '2',
             'asw_horde_override': '0', 'asw_wanderer_override': '0', 'asw_marine_ff_absorption': '1',
             'asw_sentry_friendly_fire_scale': '0', 'rd_challenge': '0', 'rd_lock_difficulty': '0',
