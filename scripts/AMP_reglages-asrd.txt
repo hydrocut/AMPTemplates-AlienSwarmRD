@@ -1,0 +1,29 @@
+# reglages-asrd.txt - ECRIT PAR AMP a chaque demarrage, a partir de AMP_reglages-asrd.txt.
+# Ne le modifie pas a la main : change les reglages dans l'onglet Configuration d'AMP.
+# lancer-asrd.sh le lit (une valeur par ligne, cle=valeur) et ecrit reactivedrop/cfg/server.cfg.
+nom={{NomServeur}}
+motdepasse={{MotDePasse}}
+rcon={{MotDePasseRcon}}
+region={{Region}}
+tags={{Tags}}
+vac={{Vac}}
+lobby_seul={{LobbySeulement}}
+accueil={{MessageAccueil}}
+difficulte={{Difficulte}}
+onslaught={{Onslaught}}
+tir_ami_hardcore={{TirAmiHardcore}}
+defi={{Defi}}
+defi_autre={{DefiAutre}}
+verrouiller={{Verrouiller}}
+campagne={{Campagne}}
+seul_possible={{SeulPossible}}
+inactifs={{Inactifs}}
+redemarrage_vide={{RedemarrageVide}}
+arret_maj={{ArretMaj}}
+workshop={{Workshop}}
+delai_accueil={{DelaiAccueil}}
+echec_auto={{RedemarrageEchec}}
+bots={{BotsJoueurs}}
+vote_exclusion={{VoteExclusion}}
+vote_mission={{VoteMission}}
+bannis={{Bannis}}

@@ -1,0 +1,10 @@
+# Ce depot ne contient que le template : le serveur (app Steam 582400) est telecharge
+# par SteamCMD a l'Update, le prefixe Wine et les reglages restent sur le serveur.
+582400/
+.wine/
+reglages-asrd.txt
+console*.log
+__pycache__/
+
+# Notes internes de TeamKit (essais, etapes), pas dans le depot public
+FAISABILITE.md

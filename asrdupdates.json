@@ -1,0 +1,41 @@
+[
+    {
+        "UpdateStageName": "Téléchargement du serveur dédié (SteamCMD anonyme, app 582400, version Windows)",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceData": "582400",
+        "UpdateSourceArgs": "563560",
+        "ForceDownloadPlatform": "Windows",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Modèle des réglages (AMP_reglages-asrd.txt)",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://raw.githubusercontent.com/hydrocut/AMPTemplates-AlienSwarmRD/main/scripts/AMP_reglages-asrd.txt",
+        "UpdateSourceArgs": "AMP_reglages-asrd.txt",
+        "UpdateSourceTarget": "{{$FullRootDir}}",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": true,
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Script de lancement (lancer-asrd.sh)",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://raw.githubusercontent.com/hydrocut/AMPTemplates-AlienSwarmRD/main/scripts/lancer-asrd.sh",
+        "UpdateSourceArgs": "lancer-asrd.sh",
+        "UpdateSourceTarget": "{{$FullRootDir}}",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": true,
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Préfixe Wine",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "\"{{$FullRootDir}}lancer-asrd.sh\" preparer",
+        "SkipOnFailure": false
+    }
+]

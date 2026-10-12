@@ -1,0 +1,8 @@
+[
+    {
+        "ConfigFile": "reglages-asrd.txt",
+        "ConfigType": "template",
+        "AutoMap": true,
+        "ConfigFileTemplate": "asrd/AMP_reglages-asrd.txt"
+    }
+]

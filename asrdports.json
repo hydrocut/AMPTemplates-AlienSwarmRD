@@ -1,0 +1,9 @@
+[
+    {
+        "Protocol": "Both",
+        "Port": 27015,
+        "Ref": "GamePort",
+        "Name": "Port du jeu et du RCON",
+        "Description": "Seul port à ouvrir : UDP pour le jeu et la liste des serveurs, TCP pour le RCON. Réglable : une instance par port. Le port client (27005) ne se règle pas dans ce jeu (le moteur prend le suivant s'il est pris) et n'a pas à être ouvert ; SourceTV est coupé."
+    }
+]
