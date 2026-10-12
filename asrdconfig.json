@@ -1,7 +1,7 @@
 [
     {
         "DisplayName": "Nom du serveur",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Serveur:dns:1",
         "Description": "Nom affiché dans la liste des serveurs du jeu. Le jeu ne lit que l'ASCII dans ses fichiers de réglages (essai du 12/10/2026 : une lettre accentuée coupait le nom en morceaux) : les accents sont retirés automatiquement (é devient e), les émojis supprimés, un guillemet \" devient ' et un point-virgule devient une virgule.",
         "Keywords": "nom,serveur,hostname,name",
@@ -14,7 +14,7 @@
     },
     {
         "DisplayName": "Mot de passe des joueurs",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Serveur:dns:1",
         "Description": "Demandé aux joueurs pour entrer. Vide = serveur ouvert à tous. Lettres sans accent, chiffres et ponctuation simple seulement (ni guillemet ni point-virgule) : sinon le serveur refuse de démarrer et explique pourquoi.",
         "Keywords": "mot de passe,password,sv_password",
@@ -27,7 +27,7 @@
     },
     {
         "DisplayName": "Mot de passe RCON",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Serveur:dns:1",
         "Description": "Mot de passe d'administration à distance, tiré au hasard par AMP, qui s'en sert pour envoyer les commandes de sa console au jeu. Un admin peut aussi l'utiliser depuis la console du jeu : rcon_password <mot de passe>, puis rcon <commande>.",
         "Keywords": "rcon,admin,rcon_password",
@@ -40,7 +40,7 @@
     },
     {
         "DisplayName": "Joueurs maximum",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Serveur:dns:1",
         "Description": "De 1 à 8. Le moteur accepterait jusqu'à 32 (essai), mais une mission se joue avec 8 marines au plus : au-delà, des joueurs n'auraient pas de personnage.",
         "Keywords": "joueurs,max,players,maxplayers,places",
@@ -56,7 +56,7 @@
     },
     {
         "DisplayName": "Région",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Serveur:dns:1",
         "Description": "Région annoncée dans la liste des serveurs (filtre des joueurs).",
         "Keywords": "region,sv_region,europe",
@@ -80,7 +80,7 @@
     },
     {
         "DisplayName": "Mots-clés (tags)",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Serveur:dns:1",
         "Description": "Mots-clés séparés par des virgules, ajoutés après ceux du jeu (difficulté, Onslaught, défi, état). Le total est limité à 64 caractères : au-delà le jeu coupe et l'écrit dans la console (« Tags string is too long »). Reste court.",
         "Keywords": "tags,sv_tags,mots-cles",
@@ -93,7 +93,7 @@
     },
     {
         "DisplayName": "Anti-triche VAC",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Serveur:dns:1",
         "Description": "Coché : serveur sécurisé par VAC (fonctionne sous Wine, vérifié le 12/10/2026). Décoché : mode -insecure, à éviter sauf pour essayer un addon qui le demande.",
         "Keywords": "vac,anti-triche,insecure,secure",
@@ -109,7 +109,7 @@
     },
     {
         "DisplayName": "Connexion par salon seulement",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Serveur:dns:1",
         "Description": "Décoché (conseillé) : on rejoint depuis la liste des serveurs du jeu et par l'adresse IP (connect IP:port). Coché (défaut du moteur) : le jeu exclut les joueurs arrivés sans salon Steam (« lobby not found »), alors que la liste des serveurs dédiés du jeu se connecte justement par l'IP.",
         "Keywords": "lobby,sv_allow_lobby_connect_only,connexion",
@@ -125,7 +125,7 @@
     },
     {
         "DisplayName": "Message d'accueil",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Serveur:dns:1",
         "Description": "Écrit dans le chat de chaque joueur quelques secondes après son arrivée (rm_welcome_message). Mêmes règles que le nom : sans accents. Vide = pas de message.",
         "Keywords": "accueil,message,welcome,motd,rm_welcome_message",
@@ -138,7 +138,7 @@
     },
     {
         "DisplayName": "Délai du message d'accueil",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Serveur:dns:1",
         "Description": "Secondes entre l'arrivée du joueur et le message d'accueil (rm_welcome_message_delay, de 0 à 30).",
         "Keywords": "accueil,delai,welcome",
@@ -154,7 +154,7 @@
     },
     {
         "DisplayName": "Difficulté",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Partie:sports_esports:2",
         "Description": "Difficulté de départ (asw_skill). Le chef du salon peut la changer dans le briefing, sauf si « Imposer ces choix » est coché. Le jeu la remet à Normale quand le serveur se vide : le template la rétablit à chaque carte.",
         "Keywords": "difficulte,asw_skill,brutal,skill",
@@ -173,7 +173,7 @@
     },
     {
         "DisplayName": "Mode Onslaught",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Partie:sports_esports:2",
         "Description": "Hordes et aliens errants en continu (asw_horde_override et asw_wanderer_override, ce que fait la case Onslaught du jeu).",
         "Keywords": "onslaught,horde,wanderer",
@@ -189,7 +189,7 @@
     },
     {
         "DisplayName": "Tir ami hardcore",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Partie:sports_esports:2",
         "Description": "Tir ami à pleins dégâts, tourelles comprises (asw_marine_ff_absorption 0 et asw_sentry_friendly_fire_scale 1, ce que fait la case « Hardcore FF » du jeu).",
         "Keywords": "tir ami,friendly fire,hardcore,ff",
@@ -205,7 +205,7 @@
     },
     {
         "DisplayName": "Défi (challenge)",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Partie:sports_esports:2",
         "Description": "Règles spéciales officielles, toutes permises en coopération. Le jeu n'active un défi qu'au chargement d'une carte et l'efface quand le serveur se vide : le template recharge alors la carte, serveur vide, pour le remettre.",
         "Keywords": "defi,challenge,rd_challenge,asbi",
@@ -230,7 +230,7 @@
     },
     {
         "DisplayName": "Défi du Workshop (identifiant)",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Partie:sports_esports:2",
         "Description": "Pour un défi venu du Workshop : son identifiant (nom du fichier resource/challenges/<id>.txt de l'addon, sans .txt). Remplace le choix ci-dessus. Vide = non utilisé.",
         "Keywords": "defi,challenge,workshop",
@@ -243,7 +243,7 @@
     },
     {
         "DisplayName": "Imposer ces choix",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Partie:sports_esports:2",
         "Description": "Coché : le chef du salon ne peut plus changer la difficulté, Onslaught, le tir ami hardcore ni le défi (rd_lock_difficulty, rd_lock_onslaught, rd_lock_hardcoreff, rd_lock_challenge). Décoché : ce ne sont que les valeurs de départ.",
         "Keywords": "verrouiller,lock,imposer",
@@ -259,7 +259,7 @@
     },
     {
         "DisplayName": "Campagne par défaut",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Partie:sports_esports:2",
         "Description": "Campagne chargée au démarrage et chaque fois que le serveur se vide (asw_default_campaign) : le serveur attend sur sa première mission. Les joueurs votent ensuite la mission ou la campagne qu'ils veulent.",
         "Keywords": "campagne,campaign,carte,mission",
@@ -285,7 +285,7 @@
     },
     {
         "DisplayName": "Relancer la mission ratée automatiquement",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Partie:sports_esports:2",
         "Description": "Coché : quand l'escouade échoue, la mission recommence tout de suite (rd_auto_fast_restart).",
         "Keywords": "echec,restart,relancer,rd_auto_fast_restart",
@@ -301,7 +301,7 @@
     },
     {
         "DisplayName": "Missions jouables à un seul joueur",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Partie:sports_esports:2",
         "Description": "Coché (défaut du jeu) : ignore les missions qui demandent deux joueurs pour démarrer.",
         "Keywords": "deux joueurs,solo,asw_ignore_need_two_player_requirement",
@@ -317,7 +317,7 @@
     },
     {
         "DisplayName": "Les joueurs peuvent ajouter des bots",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Partie:sports_esports:2",
         "Description": "Coché (défaut du jeu) : les joueurs complètent l'escouade avec des marines contrôlés par l'ordinateur (rd_player_bots_allowed).",
         "Keywords": "bots,marines,rd_player_bots_allowed",
@@ -333,7 +333,7 @@
     },
     {
         "DisplayName": "Exclure les joueurs inactifs après",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Partie:sports_esports:2",
         "Description": "Secondes sans rien faire avant exclusion (rd_kick_inactive_players). 0 = jamais.",
         "Keywords": "inactif,afk,kick",
@@ -349,7 +349,7 @@
     },
     {
         "DisplayName": "Joueurs bannis (SteamID)",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Bans et votes:gavel:3",
         "Description": "SteamID des joueurs interdits, séparés par des virgules, sous n'importe quelle forme : STEAM_1:0:12345, [U:1:24690] ou 76561197960290418 (le template convertit, le jeu ne connaît que STEAM_1:…). Appliqué avec la commande du jeu banid, à chaque carte. Les bans posés en jeu (banid puis writeid) sont gardés aussi. Le jeu n'a pas de liste d'admins : un admin, c'est quelqu'un qui connaît le mot de passe RCON.",
         "Keywords": "ban,banni,steamid,admin",
@@ -362,7 +362,7 @@
     },
     {
         "DisplayName": "Vote d'exclusion : part des joueurs",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Bans et votes:gavel:3",
         "Description": "Part des joueurs qui doivent voter pour exclure quelqu'un (asw_vote_kick_fraction ; défaut du jeu : 60 %).",
         "Keywords": "vote,kick,exclusion",
@@ -378,7 +378,7 @@
     },
     {
         "DisplayName": "Vote de mission : part des joueurs",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Bans et votes:gavel:3",
         "Description": "Part des joueurs qui doivent voter pour changer de mission ou de campagne (asw_vote_map_fraction ; défaut du jeu : 60 %).",
         "Keywords": "vote,carte,mission,map",
@@ -394,7 +394,7 @@
     },
     {
         "DisplayName": "Objets du Workshop",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Workshop et avancé:extension:4",
         "Description": "Numéros des objets du Workshop (campagnes, missions, défis), séparés par des virgules : le nombre après id= dans l'adresse de la page. Le serveur les télécharge et les active lui-même à chaque démarrage (vérifié le 12/10/2026 : un addon de 221 Mo téléchargé, puis le serveur s'est relancé seul pour le charger). Vide = aucun.",
         "Keywords": "workshop,addon,mod,carte,campagne",
@@ -407,7 +407,7 @@
     },
     {
         "DisplayName": "Redémarrage quand le serveur est vide",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Workshop et avancé:extension:4",
         "Description": "Le jeu s'arrête de lui-même quand il est vide depuis 90 s, après ce nombre de minutes de marche (rd_server_shutdown_after_num_secs : les développeurs y voient un remède aux ralentissements des serveurs restés longtemps allumés). Le template le relance aussitôt, AMP n'y voit rien. 0 = jamais. Défaut du jeu : 60.",
         "Keywords": "redemarrage,restart,vide,shutdown",
@@ -423,7 +423,7 @@
     },
     {
         "DisplayName": "Arrêt quand une mise à jour sort",
-        "Category": "Alien Swarm: Reactive Drop:stadia_controller",
+        "Category": "Alien Swarm RD:stadia_controller",
         "Subcategory": "Workshop et avancé:extension:4",
         "Description": "Coché : quand Steam publie une mise à jour du jeu, le serveur s'arrête dès qu'il est vide (sinon les joueurs à jour ne pourraient plus entrer). Il faut alors faire Update puis Start dans AMP.",
         "Keywords": "mise a jour,update,rd_server_restart_on_update",

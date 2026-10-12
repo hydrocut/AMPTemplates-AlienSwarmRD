@@ -148,6 +148,13 @@ else:
     ok('port', '27015 UDP+TCP, réglable, passé au lanceur')
 
 # ── 4. réglages <-> modèle <-> lanceur ───────────────────────────────────────
+# AMP coupe Category (« Nom:icône ») et Subcategory (« Nom:icône:ordre ») sur « : » et en fait un sélecteur
+# jQuery : un « : » dans le NOM (« Alien Swarm: Reactive Drop ») casse toute la page de réglages
+# (« unsupported pseudo: ReactiveDrop », vu par Kevin le 12 oct. 2026).
+for c in config:
+    for cle, n in (('Category', 1), ('Subcategory', 2)):
+        if c.get(cle) and c[cle].count(':') != n:
+            soucis.append('%s : %s %r doit avoir exactement %d « : » (pas de deux-points dans le nom)' % (c['FieldName'], cle, c[cle], n))
 par_nom = {c['ParamFieldName']: c for c in config}
 if len(par_nom) != len(config) or len({c['FieldName'] for c in config}) != len(config):
     soucis.append('réglages en double')
